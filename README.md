@@ -11,11 +11,11 @@ This script can be used in two ways:
 2. To be run directly by using a curl command:
    ```bash
    # To run the build.sh command after a git commit is performed (the script tests whether the command exists).
-   curl -sS http://127.0.0.1:8000/create-hook.sh | bash -s  build.sh
+   curl -sS https://jurrianfahner.github.io/scripts/create-hook.sh | bash -s  build.sh
    ```
 
    Another example with another hook:
    ```bash
    # To run the lint.sh command before a git commit is performed
-   curl -sS http://127.0.0.1:8000/create-hook.sh | bash -s pre-commit lint.sh
+   curl -sS https://jurrianfahner.github.io/scripts/create-hook.sh | bash -s pre-commit lint.sh
    ```
