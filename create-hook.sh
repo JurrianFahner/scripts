@@ -30,6 +30,7 @@ GIT_ROOT_DIR=\$(git rev-parse --show-toplevel)
 \$GET_ROOT_DIR/$COMMAND
 EOF
 
+chmod u+x .git/hooks/$HOOK
 echo "The hook is installed at .git/hooks/$HOOK"
 echo "and it will invoke following command (if hook is triggered): $COMMAND" 
 
