@@ -27,7 +27,7 @@ fi
 cat << EOF > .git/hooks/$HOOK
 #!/usr/bin/env bash
 GIT_ROOT_DIR=\$(git rev-parse --show-toplevel)
-\$GET_ROOT_DIR/$COMMAND
+\$GIT_ROOT_DIR/$COMMAND
 EOF
 
 chmod u+x .git/hooks/$HOOK
